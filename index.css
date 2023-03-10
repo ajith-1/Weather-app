@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Poppins:wght@600&family=Ubuntu:wght@700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    color: #ffff;
+    background-color: black;
+    background-image: url("./nature _cloudy.jpg");
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    background-color: #1c221e;
+    width: 100%;
+    top: 0;
+}
+
+.nav h1 {
+    top: 0;
+    margin-left: 30px;
+    font-size: 30px;
+
+}
+.nav img{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.search {
+    margin: 140px 0 0 0;
+    border: 0;
+    outline: 0;
+}
+
+.search h1 {
+    border: 0;
+    outline: 0;
+    background-color: #ffffff98;
+    color: black;
+    width: 25rem;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.search .box {
+    border: 0;
+    outline: 0;
+    background-color: #ffffff98;
+    color: black;
+    width: 25rem;
+    padding: 10px 31px;
+    border-radius: 15px;
+}
+
+.search input {
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    caret-color: #0159a1e8;
+    padding: 5px 0 5px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:'Nunito',sans-serif ;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    margin-left: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #ffff;
+    background-color: #3b6fd1;
+    cursor: pointer;
+}
+#err{
+    color: #d31616;
+    visibility: hidden;
+    font-family: 'Nunito',sans-serif;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.show {
+    position: relative;
+    visibility: hidden;
+    margin: 170px 0 0 0;
+    border: 0;
+    outline: 0;
+    background-color: #ffffff98;
+    color: black;
+    width: 21rem;
+    padding: 30px;
+    border-radius: 15px;
+    font-family: "Nunito", sans-serif;
+    transition:all 0.5s;
+    transform: translateY(-30px);
+}
+
+
+.temp {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+}
+
+.temp #deg {
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    font-family: "Nunito", sans-serif;
+
+}
+.max{
+   position: absolute;
+   top: 74%;
+   left: 60%;
+}
+
+#description {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#cityName {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+
+}
+
+.value {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+
+}
+.result span {
+    margin: 0 5px;
+    
+}
+/* --------- */
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) { 
+        .weather{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           }
+        .show{
+            margin-top: 30px;
+            width: 25rem;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+  }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) { 
+        .weather{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           }
+        .show{
+            margin-top: 30px;
+            width: 25rem;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+  }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) { 
+        .weather{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+           }
+        .show{
+            width: 21rem;
+           margin: 170px 0 0 0;
+        }
+       }
+
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) { 
+        .weather{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+           }
+        .show{
+            width: 21rem;
+           margin: 170px 0 0 0;
+        }
+  }
+ 
+    @media only screen and (min-width: 1200px) { 
+        .weather{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+           }
+        .show{
+            width: 21rem;
+           margin: 170px 0 0 0;
+        }
+  }
